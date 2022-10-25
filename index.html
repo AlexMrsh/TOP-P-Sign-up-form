@@ -5,9 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>TOP Project - Sign-up Form</title>
 </head>
 <body>
-    
+    <nav>
+        <div id="banner">
+            <img src="img/odin-logo.png" alt="The Odin Project logo">
+            <h1>ODIN</h1>
+        </div>
+    </nav>
+    <div id="content">
+        <section>
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+            <br>Sign up <em>now</em> to get started.</p>
+            <p>You know you want to.</p>
+        </section>
+        <div id="form-container">
+            <h2>Let's do this!</h2>
+            <form action="/" method="POST" id="form-signin">
+                <label for="firstname">
+                    <span>First Name</span>
+                    <input type=-display" name="user_firstname" id="firstname" required>
+                    <span class="error-display"></span>
+                </label>
+                <label for="lastname">
+                    <span>Last Name</span>
+                    <input type=-display" name="user_lastname" id="lastname" required>
+                    <span class="error-display"></span>
+                </label>
+                <label for="email">
+                    <span>Email</span>
+                    <input type="email" name="user_email" id="email" required>
+                    <span class="error-display"></span>
+                </label>
+                <label for="phone">
+                    <span>Phone Number</span>
+                    <input type="tel" name="user_tel" id="phone" required>
+                    <span class="error-display"></span>
+                </label>
+                <label for="password">
+                    <span>Password</span>
+                    <input type="password" name="user_pwd" id="password" required>
+                    <span class="error-display"></span>
+                </label>
+                <label for="password-confirm">
+                    <span>Confirm Password</span>
+                    <input type="password" name="user_pwd-confirm" id="password-confirm" required>
+                    <span class="error-display"></span>
+                </label>
+            </form>
+        </div>
+        <div id="section-bottom">
+            <button id="submit-button" type="submit" form="form-signin">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+    </div>
 </body>
 </html>
